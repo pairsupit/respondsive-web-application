@@ -6,26 +6,34 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <title>Portfolio</title>
 </head>
 
 <body>
 
     <div class="page-navbar">
-        <ul>
+        
+        <div id="hamburgurs-menu" onclick="toggleMenu()">
+            <i class="fas fa-bars"></i>
+        </div>
+
+        <ul id="ul-menu">
             <a href="#home">
                 <li>Home</li>
             </a>
             <a href="#profile">
-                <li>our services</li>
+                <li>profile</li>
             </a>
             <a href="#skill">
-                <li>our services</li>
+                <li>skill</li>
             </a>
             <a href="#about">
                 <li>about us</li>
             </a>
         </ul>
+
+        <span onclick="toggleDayNightMode()">day/night mode</span>
     </div>
 
     <div class="container">
@@ -50,7 +58,14 @@
         </div>
 
     </div>
-
+<script>
+function toggleMenu(){
+    document.getElementById('ul-menu').classList.toggle("toggle");
+}
+function toggleDayNightMode(){
+    
+}
+</script>
 </body>
 
 </html>

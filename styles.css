@@ -1,26 +1,45 @@
+/* This is prepare css default */
 * {
     box-sizing: border-box;
     margin: 0%;
-    font-family:sans-serif;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif, sans-serif;
+}
+html {
+    font-size: 16px;
 }
 .container {
     display: block;
     width:100%;
     height: 100%;
 }
+
+
 /* this is layout navbar */
 .page-navbar {
     max-width: 100%;
     background-color: cadetblue;
-    padding: 1rem;
+    padding: 0rem;
+    margin: 0rem;
+    display: flex;
+    justify-content: space-between;
+}
+#hamburgurs-menu {
+    display: none;
+    padding: 0.5rem;
+}
+span {
+    padding: 0.5rem;
 }
 ul {
+    margin: 0rem;
     padding: 0rem;
+    overflow: hidden;
 }
 li {
    list-style-type: none;
-   display: inline;
-   padding: 1rem 2rem;
+   display: block;
+   padding: 0.5rem 1.5rem;
+   float: left;
 }
 a > li:hover {
     background-color: coral;
@@ -29,12 +48,24 @@ a {
     text-decoration: none;
     color: black;
 }
+.toggle {
+    display: block;
+}
 /* this is layout navbar in mobile screen */
-@media screen and (max-width:320px) {
-    .page-navbar {
-        background-color: blue;
+@media screen and (max-width:600px) {
+    ul {
+        display: none;
+    }
+    li {
+        float:none;
+        text-align: center;
+    }
+    #hamburgurs-menu {
+        display: flex;
     }
 }
+/* this is class toggle Day or Night Mode */
+
 
 /* This is layout content*/
 .page-1 {
