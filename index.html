@@ -6,14 +6,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>Portfolio</title>
 </head>
 
 <body>
 
     <div class="page-navbar">
-        
+
         <div id="hamburgurs-menu" onclick="toggleMenu()">
             <i class="fas fa-bars"></i>
         </div>
@@ -28,44 +30,166 @@
             <a href="#skill">
                 <li>skill</li>
             </a>
+            <a href="#project">
+                <li>project</li>
+            </a>
             <a href="#about">
                 <li>about us</li>
             </a>
         </ul>
 
-        <span onclick="toggleDayNightMode()">day/night mode</span>
+        <span onclick="toggleDayNightMode()"><i class="fas fa-adjust"></i> day/night mode</span>
     </div>
 
     <div class="container">
         <div class="page-1" id="home">
-            <h1>home</h1>
+            <div class="box-1" data-aos="fade-right">
+                <h1>home</h1>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Beatae obcaecati, rerum suscipit dicta neque praesentium.
+                    Quas iste velit non officiis quasi id. Nihil maxime quaerat
+                    deserunt unde amet optio cumque. Labore aut facilis ad nam
+                    mollitia omnis, expedita numquam, eos voluptate reiciendis,
+                    voluptas modi molestias id quam tempora ratione ea ipsa alias
+                    rem voluptatibus corporis eum cum minima! Sequi, reprehenderit?
+                </p>
+            </div>
+
+            <svg id="euEMJHDFcbo1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                viewBox="0 0 640 480" shape-rendering="geometricPrecision" text-rendering="geometricPrecision">
+                <ellipse id="euEMJHDFcbo2" rx="241.773963" ry="241.773963"
+                    transform="matrix(0.961664 0 0 0.961664 308.268957 240)" fill="rgb(195,34,240)" stroke="none"
+                    stroke-width="0" />
+            </svg>
+
         </div>
 
         <div class="page-2" id="profile">
-            <h1>profile</h1>
+            <div class="box-2" data-aos="fade-left">
+                <h1 class="scroll-txt">profile</h1>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Accusamus iure atque itaque hic non nesciunt! Cumque laborum
+                    id deserunt natus magnam facilis porro dicta commodi rem.
+                    Perspiciatis distinctio soluta dolorum.
+                    Beatae eveniet asperiores porro delectus omnis molestiae esse,
+                    explicabo possimus quos, perspiciatis natus velit impedit commodi
+                    odit dolore quas ipsum est fugit ducimus ut nulla? Vitae fuga modi
+                    deleniti eligendi.
+                </p>
+            </div>
         </div>
 
         <div class="page-3" id="skill">
-            <h1>skill</h1>
+            <div class="box-3" data-aos="fade-right">
+                <h1>skill</h1>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Accusamus iure atque itaque hic non nesciunt! Cumque laborum
+                    id deserunt natus magnam facilis porro dicta commodi rem.
+                    Perspiciatis distinctio soluta dolorum.
+                    Beatae eveniet asperiores porro delectus omnis molestiae esse,
+                    explicabo possimus quos, perspiciatis natus velit impedit commodi
+                    odit dolore quas ipsum est fugit ducimus ut nulla? Vitae fuga modi
+                    deleniti eligendi.
+                </p>
+            </div>
+
         </div>
 
         <div class="page-4" id="project">
-            <h1>project</h1>
+            <div class="box-4" data-aos="fade-left">
+                <h1>project</h1>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Accusamus iure atque itaque hic non nesciunt! Cumque laborum
+                    id deserunt natus magnam facilis porro dicta commodi rem.
+                    Perspiciatis distinctio soluta dolorum.
+                    Beatae eveniet asperiores porro delectus omnis molestiae esse,
+                    explicabo possimus quos, perspiciatis natus velit impedit commodi
+                    odit dolore quas ipsum est fugit ducimus ut nulla? Vitae fuga modi
+                    deleniti eligendi.
+                </p>
+            </div>
+
         </div>
+
+        <br>
 
         <div class="page-footer" id="about">
-            <h1>about us</h1>
-        </div>
+            <div class="box-5">
+                <h1>about us</h1>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Accusamus iure atque itaque hic non nesciunt! Cumque laborum
+                    id deserunt natus magnam facilis porro dicta commodi rem.
+                    Perspiciatis distinctio soluta dolorum.
+                    Beatae eveniet asperiores porro delectus omnis molestiae esse,
+                    explicabo possimus quos, perspiciatis natus velit impedit commodi
+                    odit dolore quas ipsum est fugit ducimus ut nulla? Vitae fuga modi
+                    deleniti eligendi.
+                </p>
+            </div>
 
-    </div>
-<script>
-function toggleMenu(){
-    document.getElementById('ul-menu').classList.toggle("toggle");
-}
-function toggleDayNightMode(){
-    
-}
-</script>
+        </div>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+            AOS.init({
+                offset: 400,
+                duration: 400,
+                easing: 'ease-in-out-sine',
+                once: false // whether animation should happen only once - while scrolling down
+            });
+        </script>
+
+        <script>
+
+            //hamburgurs menu
+            function toggleMenu() {
+                document.getElementById('ul-menu').classList.toggle("toggle");
+            }
+
+            let sun = document.querySelector('.sun');
+            let body = document.getElementsByTagName('body')[0];
+            window.addEventListener('scroll', function () {
+                let val = window.scrollY;
+                let windowWidth = body.offsetWidth;
+                // sun.style.left = val + 'px';
+            });
+
+            let textProfile = document.getElementsByClassName("scroll-txt")[0];
+            let bgProfile = document.getElementById('profile');
+            let imgbong = document.getElementById('parallax');
+            window.addEventListener('scroll', function () {
+                let val = window.scrollY;
+                let windowHeight = body.offsetHeight;
+                textProfile.style.left = -700 + val + 'px';
+            });
+            let svg = document.getElementById("euEMJHDFcbo1");
+            let svgStill = document.getElementById("euEMJHDFcbo2");
+            window.addEventListener('scroll', function () {
+                let val = window.scrollY;
+                console.log(val);
+
+                if (val >= 0) {
+                    svg.style.left = -300 + 'px';
+                    svg.style.top = -100 + 'px';
+                }
+                if (val >= 400) {
+                    svg.style.left = 600 + 'px';
+                    svg.style.top = 600 + 'px';
+                }
+                if (val >= 800) {
+                    svg.style.left = -300 + 'px';
+                    svg.style.top = 1350 + 'px';
+                }
+                if (val >= 1500) {
+                    svg.style.left = 600 + 'px';
+                    svg.style.top = 2000 + 'px';
+                }
+
+                svgStill.style.left = 800 + 'px';
+                svgStill.style.top = 2800 + 'px';
+
+            });
+
+        </script>
 </body>
 
 </html>

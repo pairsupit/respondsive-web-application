@@ -6,22 +6,43 @@
 }
 html {
     font-size: 16px;
+    overflow-x: hidden;
+}
+body {
+    overflow: hidden;
+}
+body::-webkit-scrollbar {
+    width: 0.5em;
+}
+   
+body::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(104, 199, 101, 0.3);
+}
+   
+body::-webkit-scrollbar-thumb {
+    background-color: cadetblue;
 }
 .container {
     display: block;
-    width:100%;
+    max-width:100%;
     height: 100%;
+    overflow-y: hidden;
 }
-
 
 /* this is layout navbar */
 .page-navbar {
     max-width: 100%;
-    background-color: cadetblue;
+    background-color: rgb(195,34,240);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     padding: 0rem;
     margin: 0rem;
     display: flex;
     justify-content: space-between;
+
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
 }
 #hamburgurs-menu {
     display: none;
@@ -42,7 +63,7 @@ li {
    float: left;
 }
 a > li:hover {
-    background-color: coral;
+    background-color:rgb(250, 164, 78);
 }
 a {
     text-decoration: none;
@@ -66,29 +87,67 @@ a {
 }
 /* this is class toggle Day or Night Mode */
 
-
-/* This is layout content*/
-.page-1 {
-    background-color:mistyrose;
-}
-.page-2 {
-    background-color: darkslategray;
-}
-.page-3 {
-    background-color: mistyrose;
-}
-.page-4 {
-    background-color: darkslategray;
-}
-
-.page-footer {
-    background-color: cadetblue;
-    max-width: 100%;
-    height: 30Vh;
-    padding: 2rem;
+#euEMJHDFcbo1 {
+    width: 80%;
+    position: absolute;
+    top: -100px;
+    left: -300px;
+    transition: ease 1s;
+    z-index: 1;
 }
 .page-1, .page-2 , .page-3 , .page-4 {
-    max-width: 100%;
+    width: 100%;
     height: 100Vh;
-    padding: 2rem;
+    overflow: hidden;
+    padding: 3rem 5rem;
+    color:rgba(0, 0, 0);
+    background-color: white;
+}
+.page-footer {
+    background-color: rgb(195,34,240);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.page-1>p, .page-2>p , .page-3>p , .page-4>p {
+    color:black;
+}
+.page-1 .box-1 {
+    display: block;
+    max-width: 30%;
+    position: absolute;
+    margin: 15% 0;
+    z-index: 2;
+}
+.page-2 .box-2 {
+    display: block;
+    width: 30%;
+    position: absolute;
+    right: 100px;
+    top: 750px;
+    margin: 15% 0;
+    z-index: 2;
+}
+.page-3 .box-3 {
+    display: block;
+    width: 30%;
+    position: absolute;
+    left: 100px;
+    top: 1500px;
+    margin: 15% 0;
+    z-index: 2;
+}
+.page-4 .box-4 {
+    display: block;
+    width: 30%;
+    position: absolute;
+    right: 100px;
+    top: 2100px;
+    margin: 15% 0;
+    z-index: 2;
+}
+.page-footer p, .page-footer h1{
+    min-width: 80%;
+    padding: 1rem 2rem;
+    overflow-y: hidden;
+    z-index: 2;
+    margin: 0 auto;
 }
